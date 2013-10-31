@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".WelcomeAct" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:fontFamily="Roboto"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="Welcome to William Paterson University&apos;s express pizza delivery system. You can build your own custom pizza and have it delivered directly to your residence hall. During the trial stage, we only accept your Meal Plan and Pioneer Express. To get started, enter your valid Student ID number and click next!"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="43dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_default_normal_holo_light"
+        android:fontFamily="Roboto"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:onClick="move" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

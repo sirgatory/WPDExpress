@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rfletcher.wpdexpress"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rfletcher.wpdexpress.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+ 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rfletcher.wpdexpress.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity 
+            android:name="com.rfletcher.wpdexpress.WelcomeAct"
+            android:label="@string/title_welcome" >
+            
+        </activity>
+       <activity 
+            android:name="com.rfletcher.wpdexpress.ToppingActivity"
+            android:label="@string/topping_title" >
+            
+        </activity>
+         <activity 
+            android:name="com.rfletcher.wpdexpress.CheckOutActivity"
+            android:label="@string/confirm_title" >
+            
+        </activity>
+    </application>
+
+</manifest>
